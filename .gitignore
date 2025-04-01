@@ -1,0 +1,4 @@
+packager/
+bin/
+*.class
+*.jar
