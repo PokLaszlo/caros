@@ -41,4 +41,26 @@ public class Solution {
             System.out.println(car.getYear());
         }
     }
+    public void szetvalogat(){
+        ArrayList<Car> expensiveList = new ArrayList<>();
+        ArrayList<Car> cheapList = new ArrayList<>();
+        //Ha tömbbel dolgoznánk, kellene int j,k=0 változókat létrehozni
+        for (Car c : mylist) {
+            if(c.getPrice()>800000){
+                expensiveList.add(c);
+            }else{
+                cheapList.add(c);
+            }
+        }
+        System.out.println("Olcsóbb autók márkája, ára: ");;
+        for (Car car : cheapList) {
+            System.out.println("\t "+car.getBrand()+", "+car.getPrice()+"forint");
+        }
+        System.out.println("Drágább autók márkája, ára: ");;
+        for (Car car : expensiveList) {
+            System.out.println("\t "+car.getBrand()+", "+car.getPrice()+"forint");
+        }
+        
+
+    }
 }
